@@ -13,6 +13,6 @@
     , "unsafe-coerce"
     ]
   , repo = "https://github.com/garganscript/purescript-reactix"
-  , version = "v0.5.1"
+  , version = "v0.5.2"
   }
 }
