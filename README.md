@@ -20,6 +20,11 @@ cd src
 spago verify-set
 ```
 
+And remember to update `release.dhall`:
+```sh
+make
+```
+
 ## `default-shell.nix`
 
 Since we like nix, you can add something like this as `shell.nix`

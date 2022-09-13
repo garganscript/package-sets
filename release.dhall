@@ -2923,6 +2923,20 @@ let packages =
           , version = "v0.4.0"
           }
         }
+      ⫽ { formula =
+          { dependencies =
+            [ "dom-simple"
+            , "effect"
+            , "prelude"
+            , "reactix"
+            , "record"
+            , "toestand"
+            , "typisch"
+            ]
+          , repo = "https://github.com/garganscript/purescript-formula"
+          , version = "v0.2.2"
+          }
+        }
       ⫽ { reactix =
           { dependencies =
             [ "dom-simple"

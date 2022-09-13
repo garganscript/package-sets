@@ -5,6 +5,7 @@ let upstream =
 let packages =
         ./purescript-dom-simple.dhall
       ⫽ ./purescript-ffi-simple.dhall
+      ⫽ ./purescript-formula.dhall
       ⫽ ./purescript-reactix.dhall
       ⫽ ./purescript-toestand.dhall
       ⫽ ./purescript-typisch.dhall
