@@ -21,14 +21,8 @@ let
     purs compile "src/**/*.purs" "test/**/*.purs"
   '';
 in
-pkgs.mkShell {
-  name = "purescript-reactix";
-
-  buildInputs = [
-    easy-ps.purs-0_15_4
-    easy-ps.psc-package
-    easy-ps.spago
-    build
-    pkgs.dhall-json
-  ];
+{ build = build;
+  easy-ps = easy-ps;
+  pkgs = pkgs;
+  purs = easy-ps.purs-0_15_4;
 }
