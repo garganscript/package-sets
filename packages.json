@@ -2414,6 +2414,23 @@
     "repo": "https://github.com/purescript-contrib/purescript-react-dom.git",
     "version": "v8.0.0"
   },
+  "reactix": {
+    "dependencies": [
+      "dom-simple",
+      "effect",
+      "ffi-simple",
+      "foldable-traversable",
+      "functions",
+      "maybe",
+      "nullable",
+      "prelude",
+      "strings",
+      "tuples",
+      "unsafe-coerce"
+    ],
+    "repo": "https://github.com/garganscript/purescript-reactix",
+    "version": "v0.5.2"
+  },
   "read": {
     "dependencies": [
       "maybe",
