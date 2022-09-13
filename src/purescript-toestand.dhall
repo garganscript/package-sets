@@ -10,7 +10,7 @@
     , "typelevel-prelude"
     , "typisch"
     ]
-  , repo = "https://github.com/poorscript/purescript-toestand"
+  , repo = "https://github.com/garganscript/purescript-toestand"
   , version = "v0.8.1"
   }
 }

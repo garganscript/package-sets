@@ -6,6 +6,7 @@ let packages =
         ./purescript-dom-simple.dhall
       ⫽ ./purescript-ffi-simple.dhall
       ⫽ ./purescript-toestand.dhall
+      ⫽ ./purescript-typisch.dhall
       ⫽ ./spec-mocha.dhall
 
 in  upstream ⫽ packages
