@@ -1,4 +1,4 @@
-all: format generate
+all: format generate release
 
 format:
 	@find src/ -iname "*.dhall" -exec dhall format {} \;
@@ -22,3 +22,6 @@ ci: generate verify-registry test-psc-package
 	echo "Checking if packages.json has changed..."
 	git diff --exit-code packages.json
 	cd src && spago verify-set
+
+release:
+	@dhall resolve --file src/packages.dhall > release.dhall
