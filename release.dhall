@@ -2913,7 +2913,7 @@ let packages =
             , "unsafe-coerce"
             ]
           , repo = "https://github.com/garganscript/purescript-dom-simple"
-          , version = "master"
+          , version = "v0.3.0"
           }
         }
       ⫽ { ffi-simple =
