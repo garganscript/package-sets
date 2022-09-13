@@ -2904,13 +2904,13 @@ let packages =
             [ "arrays"
             , "console"
             , "effect"
+            , "ffi-simple"
             , "functions"
             , "nullable"
             , "prelude"
             , "spec"
             , "spec-mocha"
             , "unsafe-coerce"
-            , "ffi-simple"
             ]
           , repo = "https://github.com/garganscript/purescript-dom-simple"
           , version = "master"
@@ -2920,7 +2920,7 @@ let packages =
           { dependencies =
             [ "functions", "maybe", "nullable", "prelude", "unsafe-coerce" ]
           , repo = "https://github.com/garganscript/purescript-ffi-simple"
-          , version = "0.4.0"
+          , version = "v0.4.0"
           }
         }
       ⫽ { toestand =
@@ -2935,15 +2935,21 @@ let packages =
             , "typelevel-prelude"
             , "typisch"
             ]
-          , repo = "https://github.com/poorscript/purescript-toestand"
+          , repo = "https://github.com/garganscript/purescript-toestand"
           , version = "v0.8.1"
+          }
+        }
+      ⫽ { typisch =
+          { dependencies = [ "prelude" ]
+          , repo = "https://github.com/garganscript/purescript-typisch"
+          , version = "v0.3.1"
           }
         }
       ⫽ { spec-mocha =
           { dependencies =
             [ "console", "foldable-traversable", "exceptions", "spec" ]
-          , repo = "https://github.com/purescript-spec/purescript-spec-mocha"
-          , version = "v4.0.0"
+          , repo = "https://github.com/garganscript/purescript-spec-mocha"
+          , version = "v4.1.0"
           }
         }
 
