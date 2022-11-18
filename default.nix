@@ -26,7 +26,7 @@ let
     inherit pkgs;
   };
 
-  purs = easy-ps.purs-0_15_6;
+  purs = easy-ps.purs-0_15_4;
 
 in
 pkgs.runCommand "easy-ps-test" {
