@@ -3,7 +3,7 @@
 let
   pkgs = import (builtins.fetchTarball {
     url = "https://github.com/NixOS/nixpkgs/archive/22.05.tar.gz";
-    sha256 = "00fvy8rv1wq1qya8fwbm2p4zxbhgr14x0z3rcibgl4b6791jb30g";
+    sha256 = "0d643wp3l77hv2pmg2fi7vyxn4rwy0iyr8djcw1h5x72315ck9ik";
   }) {};
   easy-ps = import (
     pkgs.fetchFromGitHub {
