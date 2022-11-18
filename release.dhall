@@ -4288,7 +4288,7 @@ let packages =
             , "unsafe-coerce"
             ]
           , repo = "https://github.com/garganscript/purescript-reactix"
-          , version = "v0.5.2"
+          , version = "v0.5.3"
           }
         }
       ⫽ { simplecrypto =
