@@ -1,14 +1,15 @@
 let
   pkgs = import (builtins.fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/21.05.tar.gz";
+    url = "https://github.com/NixOS/nixpkgs/archive/22.05.tar.gz";
+    sha256 = "0d643wp3l77hv2pmg2fi7vyxn4rwy0iyr8djcw1h5x72315ck9ik";
   }) {};
 
   easy-ps = import (
     pkgs.fetchFromGitHub {
       owner = "justinwoo";
       repo = "easy-purescript-nix";
-      rev = "5926981701ac781f08b02e31e4705e46b799299d";
-      sha256 = "03g9xq451dmrkq8kiz989wnl8k0lmj60ajflz44bhp7cm08hf3bw";
+      rev = "da7acb2662961fd355f0a01a25bd32bf33577fa8";
+      sha256 = "/UOLRdnEhIOcxcm5ouOipOiSgHRzJde0ccAx4xB1dnU=";
     }
   ) {
     inherit pkgs;
@@ -18,14 +19,14 @@ let
     pkgs.fetchFromGitHub {
       owner = "justinwoo";
       repo = "easy-dhall-nix";
-      rev = "9bd1bea0dcebe1d1d120c0fd1ba76683dc4a62e3";
-      sha256 = "1gdx1iqhr3ih3f2v304yjnpjqydpl0x4ngrg58qa4x5wlcr5rdhl";
+      rev = "dce9acbb99776a7f1344db4751d6080380f76f57";
+      sha256 = "jjEqfh+M73+t2Iq/IKjAGr2d2kGUeo9A7Wu7V0IxdzI=";
     }
   ) {
     inherit pkgs;
   };
 
-  purs = easy-ps.purs-0_15_4;
+  purs = easy-ps.purs-0_15_6;
 
 in
 pkgs.runCommand "easy-ps-test" {

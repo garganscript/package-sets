@@ -2,15 +2,15 @@
 
 let
   pkgs = import (builtins.fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/21.11.tar.gz";
-    sha256 = "162dywda2dvfj1248afxc45kcrg83appjd0nmdb541hl7rnncf02";
+    url = "https://github.com/NixOS/nixpkgs/archive/22.05.tar.gz";
+    sha256 = "00fvy8rv1wq1qya8fwbm2p4zxbhgr14x0z3rcibgl4b6791jb30g";
   }) {};
   easy-ps = import (
     pkgs.fetchFromGitHub {
       owner = "justinwoo";
       repo = "easy-purescript-nix";
       rev = "master";
-      sha256 = "03g9xq451dmrkq8kiz989wnl8k0lmj60ajflz44bhp7cm08hf3bw";
+      sha256 = "/UOLRdnEhIOcxcm5ouOipOiSgHRzJde0ccAx4xB1dnU=";
     }
   ) {
     inherit pkgs;
