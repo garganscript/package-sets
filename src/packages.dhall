@@ -1,5 +1,5 @@
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.15.4-20221129/packages.dhall
+      https://github.com/purescript/package-sets/releases/download/psc-0.15.7-20230112/packages.dhall
 
 let packages =
         ./purescript-d3.dhall
